@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+    overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1661963899724-4f450352752d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+#left {
+  display: flex;
+  gap: 50px;
+  padding: 0 100px;
+  width: 25%;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.252);
+}
+
+#left .place {
+  color: #fff;
+  width: 100%;
+  white-space: nowrap;
+}
+
+#left #scroll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+#left .place:nth-child(2) h4 {
+  border-bottom: 1px solid #fff;
+  font-size: 60px;
+}
+
+#left .place:nth-child(2) h6 {
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.place h4 {
+  font-weight: 500;
+}
+
+.place h6 {
+  font-weight: 500;
+}
+
+#right {
+  width: 75%;
+  height: 100%;
+}
+
+#textright {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  color: #fff;
+  text-align: right;
+  transform: translate(0, -50%);
+}
+
+#textright h3 {
+  line-height: 1;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#textright h1 {
+  line-height: 1;
+  font-weight: 400;
+  font-size: 200px;
+}
+
+#innn {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#innn i {
+  font-size: 22px;
+}
+
+#textright input {
+  width: 380px;
+  padding: 12px 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  outline: none;
+  color: #fff;
+}
+
+#right small {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.277);
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+#textright input::placeholder {
+  color: white;
+}

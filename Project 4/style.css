@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#nav {
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vw;
+  display: flex;
+  background-color: #fff;
+}
+
+#nav #link {
+  display: flex;
+  gap: 3vw;
+}
+
+#nav #rightnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#nav button {
+  padding: 0.8vh 2.4vh;
+  border: none;
+  font-size: 2vh;
+  border-radius: 5px;
+  color: rgb(61, 75, 61);
+  font-weight: 500;
+  background-color: rgb(143, 230, 143);
+}
+#link a {
+  text-decoration: none;
+  columns: #000;
+  font-size: 2.8vh;
+  font-weight: 600;
+}
+
+#home {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+}
+
+#left {
+  position: relative;
+  width: 35%;
+  min-height: inherit;
+}
+
+#left #text {
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  right: -20%;
+}
+
+#text h1 {
+  font-size: 3.2vw;
+  line-height: 1;
+}
+
+#text p {
+  margin: 2.2vw 0;
+  width: 50%;
+  line-height: 15px;
+  font-size: 12px;
+}
+#text button {
+  padding: 1.8vh 3.2vh;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  font-size: 0.8vw;
+  color: rgb(62, 61, 75);
+  background-color: rgb(143, 171, 230);
+}
+
+#center {
+  width: 40%;
+  min-height: inherit;
+  background-image: url(https://plus.unsplash.com/premium_photo-1736780097484-180ac570f2ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5N3x8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  justify-content: space-between;
+  width: 25%;
+  min-height: inherit;
+}
+
+#circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 5vw;
+  height: 5vw;
+  font-size: 16px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.colum {
+  margin-top: 1.5vw;
+}
+
+.colum h6 {
+  font-weight: 450;
+  opacity: 0.5;
+  margin-top: 0.5vw;
+}
+
+#icon {
+  font-size: 20px;
+  padding-right: 3vw;
+  justify-content: space-between;
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  #nav #link {
+    display: none;
+  }
+
+  #home {
+    flex-direction: column;
+  }
+  #left {
+    width: 100%;
+    min-height: 10vh;
+    padding: 5vw;
+  }
+  #left #text {
+    position: static;
+  }
+  #text h1 {
+    font-size: 6vw;
+  }
+
+  #text p {
+    width: 100%;
+  }
+  #text button {
+    font-size: 2.2vw;
+    padding: 3vw 6vw;
+  }
+
+  #center {
+    width: 100%;
+    min-height: 50vh;
+    background-position: center;
+  }
+
+  #right {
+    width: 100%;
+    min-height: 40vh;
+    padding: 10vw;
+  }
+}
